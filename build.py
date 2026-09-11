@@ -87,6 +87,11 @@ LOCAL_LOGO_OVERRIDES = {
     "더트라이브": "assets/portfolio/thetrive.png",
     "케이뷰티월드와이드": "assets/portfolio/kbeautyww.png",
     "Argos Identity": "assets/portfolio/argos.png",
+    "쏘핏": "assets/portfolio/sofit.png",
+    "SOFIT": "assets/portfolio/sofit.png",
+    "아르고노트에이아이": "assets/portfolio/argonaut-ai.png",
+    "Argonaut AI": "assets/portfolio/argonaut-ai.png",
+    "아르고넛 AI": "assets/portfolio/argonaut-ai.png",
 }
 
 def _normalize_url(url):
@@ -356,17 +361,17 @@ def write(name, html):
 FOUNDERS = [
     {
         "name": "신명진",
-        "role": "김기사컴퍼니 공동대표 · 김기사랩 대표",
+        "role": "김기사랩 대표",
         "img": "assets/team/shinmj.jpg",
     },
     {
         "name": "박종환",
-        "role": "김기사컴퍼니 공동대표 · 김기사랩 파트너",
+        "role": "김기사랩 파트너",
         "img": "assets/team/parkjh2.jpg",
     },
     {
         "name": "김원태",
-        "role": "김기사컴퍼니 공동대표 · 김기사랩 파트너",
+        "role": "김기사랩 파트너",
         "img": "assets/team/kimwt.jpg",
     },
 ]
@@ -757,7 +762,7 @@ ABOUT_BODY = f'''
   <div class="wrap">
     <div class="eyebrow reveal">Timeline</div>
     <h2 class="h-lg reveal">김기사랩 연혁</h2>
-    <p class="lead reveal" style="margin-top:16px;">2018년 설립 이후 조합 결성을 통해 꾸준한 투자 활동을 진행하고 있으며, 2019년에는 TIPS 운영사로도 선정되어 매년 배치 프로그램을 진행하고 있습니다.</p>
+    <p class="lead reveal" style="margin-top:16px;">2019년 TIPS 운영사로 선정된 이후, 매년 배치 프로그램을 통해 꾸준한 투자 활동을 진행하고 있습니다.</p>
     <div class="timeline reveal" style="margin-top:36px;max-width:760px;">
       <div class="timeline-item">
         <div class="year">2000</div>
@@ -858,7 +863,7 @@ PROGRAM_BODY = f'''
 <section class="section-tight">
   <div class="wrap">
     <div class="eyebrow reveal">Benefits</div>
-    <h2 class="h-lg reveal">김기사랩 창업팀이 받는 것</h2>
+    <h2 class="h-lg reveal">김기사랩의 창업팀 지원</h2>
     <div class="grid-2" style="margin-top:40px;">
       <div class="card reveal">
         {icon_badge("money")}
@@ -936,7 +941,7 @@ PORTFOLIO_BODY = f'''
   <div class="wrap">
     <div class="eyebrow reveal">Portfolio</div>
     <h1 class="reveal">김기사랩과 함께<br>성장하는 스타트업들</h1>
-    <p class="lead reveal">2018년 설립 이후, 분야를 가리지 않고 세상을 바꿀 잠재력에 투자해왔습니다. AI·딥테크·서비스·플랫폼 등 다양한 카테고리의 회사에 투자합니다.</p>
+    <p class="lead reveal">2018년 설립 이후, 분야를 가리지 않고 세상을 바꿀 잠재력에 투자해왔습니다. <span style="white-space:nowrap;">AI·딥테크</span>·서비스·플랫폼 등 다양한 카테고리의 회사에 투자합니다.</p>
   </div>
 </section>
 

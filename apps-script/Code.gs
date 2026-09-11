@@ -78,15 +78,13 @@ function doPost(e) {
       bodyLines.push('', '사업계획서: 첨부되지 않음');
     }
 
-    var mailArgs = {
-      to: TO_EMAIL,
-      subject: subject,
-      body: bodyLines.join('\n')
-    };
+    var mailOptions = {};
     if (attachments.length > 0) {
-      mailArgs.attachments = attachments;
+      mailOptions.attachments = attachments;
     }
-    MailApp.sendEmail(mailArgs);
+    // MailApp은 '익명 공유 서버'로 발송되어 동일 계정의 전달(포워딩) 규칙과
+    // 잘 맞물리지 않는 경우가 있어, 실제 계정으로 발송하는 GmailApp을 사용한다.
+    GmailApp.sendEmail(TO_EMAIL, subject, bodyLines.join('\n'), mailOptions);
 
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true }))
